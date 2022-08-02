@@ -1,0 +1,119 @@
+.photo-gallery-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(204, 235, 255) 100%);
+  
+  }
+  .photo-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+  }
+  
+  .photo-item-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 0.5em rgb(255, 255, 255);
+    font-family: "Cinzel", serif;
+    margin: 0px;
+  }
+  
+  .img-photo-gallery {
+    width: 333px;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 2.5%;
+    border-bottom-left-radius: 2.5%;
+  }
+  .card-photo-gallery-id {
+    display: flex;
+    flex-direction: row;
+    height: 625px;
+    box-shadow: 0px 0px 15px rgb(176, 176, 176);
+    margin: 1em auto;
+    border-radius: 2.5%;
+  }
+  .img-gallery {
+    width: 100%;
+    height: 500px;
+    
+  }
+  .photo-gallery-info {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Cinzel", serif;
+    padding: 1em;
+    font-weight: 500;
+    background-image: linear-gradient(rgba(255, 255, 255, 1),rgba(159, 193, 255, 0.4)), url("https://images.unsplash.com/photo-1604449075651-5188eee5ddb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJyYW5jaGVzfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+  }
+
+  .photo-description {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.2em;
+    font-family: 'Cinzel', serif;
+    text-align: justify;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+  
+    .photo-gallery-container {
+    display: flex;
+    flex-direction: column;  
+    gap: 30px;
+    width: auto;
+    height: auto;
+    padding: 1em 1em;
+    
+  
+    }
+    .card-photo-gallery-id {
+      height: auto;
+      width: 100%;
+    }
+  
+    .img-gallery {
+      width: 100%;
+      height: auto;
+    }
+  
+    .photo-gallery-info {
+      width: 100%;
+      height: auto;
+    }
+   
+  
+    .photo-description {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      font-size: 0.7em;
+      font-family: 'Cinzel', serif;
+      text-align: justify;
+    }
+  
+  
+  }
