@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
+import Button from 'react-bootstrap/Button';
 
 
 function Footer() {
@@ -22,7 +22,7 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button variant="success">Subscribe</Button>
           </form>
         </div>
       </section>

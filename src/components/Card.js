@@ -1,14 +1,14 @@
 import React from 'react'
 import "./Card.css"
-import { PhotoDatabase } from './PhotoDatabase'
 
-function Card() {
+
+function Card({array}) {
   return (
     <>
     <div className="photo-gallery-container">
       
       <div className="photo-gallery">
-        {PhotoDatabase.map((item) => (
+        {array.map((item) => (
           <div className="card-photo-gallery-id" key={item.id}>
             <div className="img-photo-gallery">
               <img className="img-gallery" src={item.src} alt={item.name} />
